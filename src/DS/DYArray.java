@@ -17,7 +17,7 @@ public class DYArray {
         number[3] = 22;
         number[4] = 55;
         
-        System.out.println("simple array");
+        System.out.println("simple array : ");
         for(int i = 0 ; i < 5 ;i++)
             System.out.println(number[i] + "\t");    
             
@@ -26,14 +26,39 @@ public class DYArray {
         stu[1] = new Student("B" , 20);
         stu[2] = new Student("C" , 30);
         
-        System.out.println("Object array");
+        System.out.println("\nObject array : ");
         for(Student Student : stu)
             System.out.println("Name : " + Student.name + "\tid : " + Student.id );
         
         
+        System.out.println("\nDynamic Array : ");
+        //Dynamic Array. 
+        DynamicArray<Integer> Ar = new DynamicArray<Integer>();
+        Ar.insert(45);
+        System.out.println("Size : " + Ar.getsize());
+        Ar.insert(60);
+        System.out.println("Size : " + Ar.getsize());//size++..u can see it in the output_Screen.
+        Ar.insert(10);
+        System.out.println("Size : " + Ar.getsize());//size++..u can see it in the output_Screen.
+        Ar.insert(20);
+        System.out.println("Size : " + Ar.getsize());
+        Ar.insert(360);
+        System.out.println("Size : " + Ar.getsize());//size++..u can see it in the output_Screen.
         
         
-        
+        System.out.println("\nDynamic Array : ");
+        //Dynamic Array. 
+        DynamicArray<Student> AR_1 = new DynamicArray<Student>();
+        AR_1.insert(20);
+        System.out.println("Size : " + Ar.getsize());
+        AR_1.insert(60);
+        System.out.println("Size : " + Ar.getsize());//size++..u can see it in the output_Screen.
+        AR_1.insert(10);
+        System.out.println("Size : " + Ar.getsize());//size++..u can see it in the output_Screen.
+        AR_1.insert(20);
+        System.out.println("Size : " + Ar.getsize());
+        AR_1.insert(360);
+        System.out.println("Size : " + Ar.getsize());//size++..u can see it in the output_Screen.
     }
     
 }

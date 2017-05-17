@@ -2,45 +2,14 @@
 public class SLLNode {
 
 
-private String Data;
-private SLLNode next;
-private SLLNode prev;
+public String Data;
+public SLLNode next;
 
-
-
-    public SLLNode(String Data,SLLNode next,SLLNode prev){
-        
-        this.Data = Data;
-        this.next = null;
-        this.prev = null;
+    public SLLNode(String Data) {
+        this(Data,null);
     }
-
-
-
-    public void setData(String Data) {
+    public SLLNode(String Data, SLLNode next) {
         this.Data = Data;
-    }
-
-    public void setNext(SLLNode next) {
         this.next = next;
     }
-
-    public void setPrev(SLLNode prev) {
-        this.prev = prev;
-    }
-
-    public String getData() {
-        return Data;
-    }
-
-    public SLLNode getNext() {
-        return next;
-    }
-
-    public SLLNode getPrev() {
-        return prev;
-    }
-
-
-    
 }
